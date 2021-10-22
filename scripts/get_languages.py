@@ -1,5 +1,6 @@
 import requests
 import json
+from datetime import datetime
 from collections import defaultdict
 from bs4 import BeautifulSoup
 
@@ -52,6 +53,15 @@ def parse_webpage() -> dict:
 
 if __name__ == "__main__":
 
-    data = parse_webpage()
+    # Obtaining all lan
+    languages = parse_webpage()
+
+    # generating a lagnauge.txt file
+    with open("programminglang.txt", "w") as langfile:
+        date_created = datetime.now().strftime("%m-%d-%Y")
+        langfile.write("#> Created in: {}\n".format(date_created))
+        for language in languages.keys():
+            langfile.write("{}\n".format(language.lower()))
+
     with open("langs.json", "w") as outfile:
-        json.dump(data, outfile)
+        json.dump(languages, outfile)
