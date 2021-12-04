@@ -13,9 +13,9 @@ def get_webpage() -> str:
     content = r.text
     return content
 
-def parse_webpage() -> dict: 
+def parse_webpage() -> dict:
     """ Parses HTML and extracts all computer languages and their links.
-    returns a dictioanry containing computer languages and links as key-value 
+    returns a dictioanry containing computer languages and links as key-value
     pairs
     """
     content = get_webpage()
@@ -23,7 +23,7 @@ def parse_webpage() -> dict:
 
     # source link
     wiki_link = "https://en.wikipedia.org"
-    
+
     # selecting container that has all programing languages
     lang_elm_id = "mw-content-text"
     lang_table = bs.find(id=lang_elm_id)
@@ -36,19 +36,19 @@ def parse_webpage() -> dict:
         for ul in list_elm:
             list_items = ul.find_all("li")
             for li in list_items:
-                # error handlin when a link is not found 
+                # error handlin when a link is not found
                 # -- string manipulation to remove unicode characters
                 try:
                     endpoint = li.find("a").get("href")
                     link = "{}{}".format(wiki_link, endpoint)
                     lang = li.text.encode("ascii", "ignore").decode("utf-8")
-                    langs[lang] = link 
+                    langs[lang] = link
                 except AttributeError:
                     # some languages do not links so only append "N/A"
                     link = "N/A"
                     lang = li.text.encode("ascii", "ignore").decode("utf-8")
-                    langs[lang] = link 
-                
+                    langs[lang] = link
+
     return langs
 
 if __name__ == "__main__":
