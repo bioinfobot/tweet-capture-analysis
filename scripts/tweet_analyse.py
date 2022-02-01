@@ -23,7 +23,8 @@ from wordcloud import WordCloud
 import json
 
 # Establish connection to Sqlite3 database.
-conn = sqlite3.connect('../../db/bioinfotweet.db')
+#conn = sqlite3.connect('../../db/bioinfotweet.db')
+conn = sqlite3.connect('/home/bioinformaticsbot/db/bioinfotweet.db')
 c = conn.cursor()
 
 # Extract tweets' text from the database followed by filtering and tokenizing.
