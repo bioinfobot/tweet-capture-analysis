@@ -6,6 +6,8 @@ from datetime import datetime
 
 import pandas as pd
 
+# bioinfobot imports
+from bioinfobot.structs.paths import TweetAnalysisPaths
 
 
 def get_year(datetime):
@@ -79,8 +81,6 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument("-d", "--db", type=str, required=True,
                         help="path to database")
-    parser.add_argument("-o", "--outdir", type=str, required=True,
-                        help="Name of directory containing all data" )
     args = parser.parse_args()
 
     # loading database
@@ -88,7 +88,8 @@ if __name__ == "__main__" :
 
     # creating data folder
     # TODO: This needs to be replaced with the designed paths in the Paths module
-    tweet_path = f"../data/{args.outdir}"
+    paths = TweetAnalysisPaths()
+    tweet_path = paths.tweet_data
 
     # grouping data based on month and year
     grouped_df = tweet_df.groupby(by=["year", "month"], axis=0)
