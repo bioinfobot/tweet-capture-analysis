@@ -6,3 +6,4 @@ protoypes/note.txt
 protoypes
 notebooks
 *.pyc
+db/bioinfotweet.db
