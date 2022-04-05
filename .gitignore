@@ -3,3 +3,6 @@ protoypes/note.txt
 *.pyc
 .gitignore
 .gitignore
+protoypes
+notebooks
+*.pyc
