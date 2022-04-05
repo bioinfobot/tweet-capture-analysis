@@ -105,7 +105,7 @@ if __name__ == "__main__" :
         for month, month_df in grouped_month:
 
             # creating complete path where to save csv file
-            data_file_path = os.path.join(tweet_path, year, f"{month}_{year}.csv")
+            data_file_path = os.path.join(tweet_path, year, f"{int(month)}.tsv")
 
 
             # creating directories and csv files
@@ -113,5 +113,5 @@ if __name__ == "__main__" :
             data_path.mkdir(parents=True, exist_ok=True)
 
             # saving as csv file
-            month_df.to_csv(data_file_path, index=False)
+            month_df.to_csv(data_file_path, index=False, sep="\t")
             print("MESSAGE: Tweet data saved in:", data_file_path)
