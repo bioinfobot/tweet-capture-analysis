@@ -102,10 +102,9 @@ if __name__ == "__main__" :
         # then group based on month
         # -- this will seperated all months
         grouped_month = year_df.groupby(by=["month"])
-        for month_id, month_df in grouped_month:
+        for month, month_df in grouped_month:
 
             # creating complete path where to save csv file
-            month = datetime.strptime(month_id, "%m").strftime("%B").lower()
             data_file_path = os.path.join(tweet_path, year, f"{month}_{year}.csv")
 
 
