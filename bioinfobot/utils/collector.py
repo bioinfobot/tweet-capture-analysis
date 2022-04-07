@@ -6,7 +6,7 @@ import os
 import glob
 
 # bioinfobot imports
-from bioinfobot.structs.paths import TweetAnalysisPaths
+from bioinfobot.utils.paths import TweetAnalysisPaths
 
 
 def select_tweet_dir_by_year(year: int) -> list:

@@ -24,3 +24,4 @@ class BioBotEndPoints:
         self.json_data = "tweet-capture-analysis/data"
         self.images = "tweet-capture-analysis/images"
         self.static_images = "website-code/Bioinfobot/static/images/wordcloud"
+        
