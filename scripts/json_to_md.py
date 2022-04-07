@@ -1,3 +1,5 @@
+#TODO: only get latest file 
+# TODO: update with path's object
 # we are only testing with one script
 import os
 import sys

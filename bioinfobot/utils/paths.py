@@ -1,4 +1,3 @@
-from io import UnsupportedOperation
 import os
 
 class TweetAnalysisPaths():
