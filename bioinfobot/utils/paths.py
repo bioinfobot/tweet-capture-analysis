@@ -1,7 +1,9 @@
 import os
 
-class TweetAnalysisPaths():
-    """ Object containing paths in the tweet analysis folder"""
+
+class TweetAnalysisPaths:
+    """Object containing paths in the tweet analysis folder"""
+
     def __init__(self):
 
         # setting root path
@@ -18,7 +20,6 @@ class TweetAnalysisPaths():
         self.tweet_data = os.path.join(self.data_path, "tweet_data")
         self.font_path = os.path.join(self.config_path, "fonts")
 
-
     def __set_root(self):
         full_path = os.getcwd()
         root_name = "bioinfobot/tweet-capture-analysis"
@@ -31,7 +32,8 @@ class TweetAnalysisPaths():
         self.root_name = root_name
         self.root_path = root_path
 
-class WebsitePaths():
+
+class WebsitePaths:
     def __init__(self):
 
         # setting root path
@@ -39,9 +41,13 @@ class WebsitePaths():
         self.root_path = None
         self.__set_root()
 
+        # paths
+        self.website_wordcloud = os.path.join(self.root_path, "static/images/wordcloud")
+        self.website_posts = os.path.join(self.root_path, "content/en/posts")
+
     def __set_root(self):
         current_path = os.getcwd()
-        root_name = "bioinfobot/website-code"
+        root_name = "bioinfobot/website-code/Bioinfobot"
         splitter = "bioinfobot/tweet-capture-analysis"
         root_header = current_path.split(splitter)[0]
         root_path = os.path.join(root_header, root_name)

@@ -146,7 +146,6 @@ def send_to_website(files: str, dst: str, create_dir=False) -> None:
     dst_path = Path(dst)
     website_paths = WebsitePaths()
 
-
     # path check. Should only be restrictive to website-code path.
     if website_paths.root_name not in dst:
         raise ValueError("Provided destined does not point to website source code")
@@ -158,43 +157,33 @@ def send_to_website(files: str, dst: str, create_dir=False) -> None:
             raise FileNotFoundError("Unable to find destined directory in source code")
 
         # check all files exist before moving
-        not_found = []
-        for idx, fpath in enumerate(files):
-            fpath = Path(fpath)
-            if not fpath.exists():
-                not
-
-
-
-
-
         for f_path in files:
             fpath = Path(f_path)
             if not fpath.exists():
                 raise FileNotFoundError("Provides files do not exists")
-            shutil.move(d)
+            shutil.move(fpath, dst_path.abspath())
 
+    # dst parameter will create a new directory
+    if create_dir is True:
 
-    # assuming this is in the scripts folder
-    endpoint = BioBotEndPoints()
-    content_path = "../../{}".format(endpoint.contents)
-    print("Message sending mdfiles to website-code contents folder")
-    md_files = glob.glob("{}/*.md".format(md_dir))
-    for md_file in md_files:
-        shutil.move(md_file, content_path)
+        # will raise an error if the directory already exists
+        dst_path.mkdir(exist_ok=False)
 
-    os.rmdir(md_dir)
+        # moving all files
+        for f_path in files:
+            fpath = Path(f_path)
+            if not fpath.exists():
+                raise FileNotFoundError("Provides files do not exists")
+            shutil.move(fpath, dst_path.absp)
 
 
 if __name__ == "__main__":
 
-    # TODO: add arguments into this script taking one file at a time
     parser = argparse.ArgumentParser(description="Converts JSON files into md files")
-    parser.add_argument("-i", "--input", type=str, required=True, help="JSON file")
+    parser.add_argument("-i", "--input", nargs="+", required=True, help="JSON file")
     parser.add_argument(
         "-o",
         "--overwrite",
-        type=str,
         default=False,
         action="store_true",
         required=False,
@@ -202,30 +191,51 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    # initialize paths
+    # initialize paths and temp_file
     web_paths = WebsitePaths()
     tweet_paths = TweetAnalysisPaths()
     temp_dir = tempfile.mkdtemp()
+    posts_path = web_paths.website_posts
 
     # if the overwrite options is true
     # -- convert all json file to md files and overwrite all md files in the website
+    # NOTE: This might be removed in the future since we're only doing this oncejjjjjjjj
     if args.overwrite is True:
         json_files = glob.glob(f"{tweet_paths.data_path}/*.json")
         for json_file in json_files:
-            md_path = to_markdown()
+            md_path = to_markdown(json_file)
             shutil.move(md_path, temp_dir)
 
-        transfer_md_to_website()
+        # remove all old md files that exists in the website folder
+        old_md_files = glob.glob(f"{posts_path}/*.md")
+        print(old_md_files)
+        if not os.path.exists(posts_path):
+            raise FileNotFoundError("word cloud file not found")
+        [os.remove(_old_md) for _old_md in old_md_files]
+
+        # adding new md files
+        md_files = glob.glob(f"{temp_dir}/*.md")
+        for md_file in md_files:
+            shutil.move(md_file, posts_path)
+
         # removing temporary files
         shutil.rmtree(temp_dir)
 
-    json_files = glob.glob("../data/*.json")
-    temp_dir = "_temp_md_dir"
-    if os.path.exists(temp_dir):
-        os.remove(temp_dir)
-    os.mkdir(temp_dir)
-    for json_file in json_files:
-        to_markdown(json_file)
+    # if adding a single file or multiple files without overwriting
+    for json_file in args.input:
+        md_path = to_markdown(json_file)
+        shutil.move(md_path, temp_dir)
 
-    send_to_contents(temp_dir)
+    # if the file exists already, it will over write it
+    added_md = glob.glob(f"{temp_dir}/*.md")
+    [shutil.move(md, posts_path) for md in added_md]
+
+    # remove temporary directory
+    shutil.rmtree(temp_dir)
+
+
+
+
+
+    
 
