@@ -119,9 +119,9 @@ wordcloud.to_file(imagePath)
 imageUrl = "https://bioinfobot.github.io/images/" + name + '.png'
 
 
-def dict_value_sort_return_top(frquency_dict, maxreturn):
+def dict_value_sort_return_top(frequency_dict, maxreturn):
     """Sort the dictionary according to values and return a list of top n elements"""
-    dictionary_sorted = OrderedDict(sorted(frquency_dict.items(), key=lambda t: t[1], reverse=True))
+    dictionary_sorted = OrderedDict(sorted(frequency_dict.items(), key=lambda t: t[1], reverse=True))
     # Store top values in an array
     # Change maxCount value to extract top n elements
     count = 0
