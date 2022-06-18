@@ -1,4 +1,20 @@
+import logging
 from collections import OrderedDict
+
+# bioinfobot imports
+from bioinfobot.utils.paths import TweetAnalysisPaths
+
+
+# starting logger
+ta_paths = TweetAnalysisPaths()
+logging.basicConfig(
+    filename=ta_paths.analysis_log,
+    level=logging.DEBUG,
+    filemode="a",
+    format="%(asctime)s - %(levelname)s: %(message)s",
+    datefmt="%m/%d/%Y %I:%M:%S %p",
+)
+
 
 def flatten_list(nd_list):
     """flattens N-d list into 1D list
@@ -19,6 +35,8 @@ def flatten_list(nd_list):
         Raised if the input parameter is not a list
     """
     if not isinstance(nd_list, list):
+        func_name = flatten_list.__name__
+        logging.error(f"Invalid data type capture in {func_name}")
         raise TypeError("nd_list must be a list")
 
     flat_list = []

@@ -7,8 +7,9 @@ EMAIL           : rohit.farmer@gmail.com
 """
 import os
 import re
-import string
 import json
+import string
+import logging
 
 import pandas as pd
 from nltk.tokenize import word_tokenize
@@ -20,6 +21,18 @@ from wordcloud import WordCloud
 # bioinforbot imports
 from bioinfobot.utils.paths import TweetAnalysisPaths
 
+# starting global log
+ta_paths = TweetAnalysisPaths()
+logging.basicConfig(
+    filename=ta_paths.analysis_log,
+    level=logging.DEBUG,
+    filemode="a",
+    format="%(asctime)s - %(levelname)s: %(message)s",
+    datefmt="%m/%d/%Y %I:%M:%S %p",
+)
+logging.getLogger(
+    "matplotlib.font_manager"
+).disabled = True  # removes matplotlib debugg
 
 def tweet_clean(text):
     """Function to remove unwanted text/words from tweets. This is independent of nltk stopwords method."""
@@ -56,7 +69,7 @@ def tweet_clean(text):
 
 
 def extract_hash(tweets):
-    """extracts all hastags in tweets
+    """extracts all hashtags in tweets
 
     Parameters
     ----------
@@ -73,9 +86,13 @@ def extract_hash(tweets):
     TypeError
         Raised if tweets is not a list
     """
+    logging.debug("Extracting all hashtags")
+
     # type checking
+    logging.debug("Checking input types")
     if not isinstance(tweets, list):
-        raise TypeError("tweets must be a list")
+        logging.error(f"Invalid type captured in {extract_hash.__name__}")
+        raise TypeError("tweets must be a list format")
 
     total_hash = []
     for tweet in tweets:
@@ -84,6 +101,8 @@ def extract_hash(tweets):
             continue
         else:
             total_hash += hash_match
+
+    logging.info("Hash extraction successful")
 
     total_hash = filter_hash(total_hash)
     return total_hash
@@ -146,7 +165,7 @@ def create_wordcloud(name: str, words_freq: dict) -> None:
     ).generate_from_frequencies(words_freq)
 
     wordcloud.to_file(image_path)
-    print(f"WordClouts saved at: {image_path}")
+    logging.info(f"WordClouts saved at: {image_path}")
 
 
 # Tweet data utils
@@ -331,10 +350,14 @@ def create_json(
         "PopularLanguages": lang_nonzero,
     }
 
-    json_path = f"../data/{name}.json"
+    json_path = os.path.join(ta_paths.data_path, f"{name}.json")
+    if not os.path.exists(ta_paths.data_path):
+        logging.error(f"Directory {ta_paths.data_path} does not exists")
+        raise FileNotFoundError("Unable to find data directory")
     with open(json_path, "w") as outfile:
         json.dump(main_dump, outfile)
-    print(f"JSON file create at: {json_path}")
+
+    logging.debug(f"JSON file create at: {json_path}")
     return json_path
 
 
@@ -349,10 +372,15 @@ def count_prog_langs(hash_list):
     Returns
     -------
     dict
-        program langauge and counts as key value pairs
+        program language and counts as key value pairs
     """
-    with open("../configs/programminglang.txt", "r") as progfile:
-        # creating a dictionary of all langauges with a count of zerio
+    if not os.path.exists(ta_paths.proglang_file):
+        e_msg = "unable to locate the programing language config file"
+        logging.error(e_msg)
+        raise FileNotFoundError(e_msg)
+
+    with open(ta_paths.proglang_file, "r") as progfile:
+        # creating a dictionary of all languages with a count of zero
         loaded_langs = set([prog_name.rstrip() for prog_name in progfile])
 
     # iterate through all hashes and counting languages

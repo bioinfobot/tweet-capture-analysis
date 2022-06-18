@@ -1,4 +1,5 @@
 import os
+import logging
 
 
 class TweetAnalysisPaths:
@@ -15,10 +16,15 @@ class TweetAnalysisPaths:
         self.images_path = os.path.join(self.root_path, "images")
         self.data_path = os.path.join(self.root_path, "data")
         self.config_path = os.path.join(self.root_path, "configs")
+        self.log_path = os.path.join(self.root_path, "logs")
 
-        # directories containing files
+        # containing files
+        self.proglang_file = os.path.join(self.config_path, "programminglang.txt")
         self.tweet_data = os.path.join(self.data_path, "tweet_data")
         self.font_path = os.path.join(self.config_path, "fonts")
+
+        # log files
+        self.analysis_log = os.path.join(self.log_path, "tweet_analysis.logs")
 
     def __set_root(self):
         full_path = os.getcwd()
@@ -27,6 +33,7 @@ class TweetAnalysisPaths:
         root_path = os.path.join(root_header, root_name)
 
         if not os.path.exists(root_path):
+            print(root_path)
             raise FileNotFoundError("unable to find `tweet-capture-analysis` path")
 
         self.root_name = root_name
