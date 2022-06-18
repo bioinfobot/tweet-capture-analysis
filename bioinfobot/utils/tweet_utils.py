@@ -146,6 +146,7 @@ def create_wordcloud(name: str, words_freq: dict) -> None:
     ).generate_from_frequencies(words_freq)
 
     wordcloud.to_file(image_path)
+    print(f"WordClouts saved at: {image_path}")
 
 
 # Tweet data utils
@@ -293,7 +294,7 @@ def create_json(
     users_freq_sorted,
     lang_nonzero,
 ):
-    """_summary_
+    """Generates a JSON file containing analyzed monthly tweets
 
     Parameters
     ----------
@@ -333,7 +334,7 @@ def create_json(
     json_path = f"../data/{name}.json"
     with open(json_path, "w") as outfile:
         json.dump(main_dump, outfile)
-
+    print(f"JSON file create at: {json_path}")
     return json_path
 
 
