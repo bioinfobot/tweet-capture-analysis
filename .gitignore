@@ -1,2 +1,10 @@
 .log
 protoypes/note.txt
+*.pyc
+.gitignore
+.gitignore
+protoypes
+notebooks
+*.pyc
+db/bioinfotweet.db
+protoypes

@@ -1,0 +1,7 @@
+This to do in json_to_md.py scripts
+-----------------------------------
+implement the paths objects into the script for much more safer of transfering files
+and directory location
+
+Now the to_md() function that retruns to the absolute
+

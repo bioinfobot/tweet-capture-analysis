@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+bioinfobot.egg-info/PKG-INFO
+bioinfobot.egg-info/SOURCES.txt
+bioinfobot.egg-info/dependency_links.txt
+bioinfobot.egg-info/top_level.txt

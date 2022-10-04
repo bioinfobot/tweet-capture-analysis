@@ -1,0 +1,687 @@
+#> Created in: 10-22-2021
+a.net (a#/a sharp)
+a-0 system
+a+ (a plus)
+abap
+abc
+abc algol
+acc
+accent (rational synergy)
+ace dasl (distributed application specification language)
+action!
+actionscript
+actor
+ada
+adenine (haystack)
+advpl
+agda
+agilent vee (keysight vee)
+agora
+aimms
+aldor
+alef
+alf
+algol 58
+algol 60
+algol 68
+algol w
+alice (alice ml)
+alma-0
+ambienttalk
+amiga e
+amos (amos basic)
+ampl
+analitik
+angelscript
+apache pig latin
+apex (salesforce.com, inc)
+apl
+app inventor for android's visual block language (mit app inventor)
+applescript
+apt
+arc
+arexx
+argus
+assembly language (asm)
+autoit
+autolisp / visual lisp
+averest
+awk
+axum
+b
+babbage
+ballerina
+bash
+basic
+batch file (windows/ms-dos)
+bc (basic calculator)
+bcpl
+beanshell
+bertrand
+beta
+bliss
+blockly
+bloop
+boo
+boomerang
+bosque
+c  iso/iec 9899
+c-- (c minus minus)
+c++ (c plus plus)  iso/iec 14882
+c*
+c# (c sharp)  iso/iec 23270
+c/al
+cach objectscript
+c shell (csh)
+caml
+cayenne (lennart augustsson)
+cduce
+cecil
+cesil (computer education in schools instruction language)
+cu
+ceylon
+cfengine
+cg (high-level shader/shading language [hlsl])
+ch
+chapel (cascade high productivity language)
+charm
+chill
+chip-8
+chuck
+cilk (also cilk++ and cilk plus)
+control language
+claire
+clarion
+clean
+clipper
+clips
+clist
+clojure
+clu
+cms-2
+cobol  iso/iec 1989
+cobolscript  cobol scripting language
+cobra
+coffeescript
+coldfusion
+comal
+comit
+common intermediate language (cil)
+common lisp (also known as cl)
+compass
+component pascal
+constraint handling rules (chr)
+comtran
+cool
+coq
+coral 66
+corvision
+cowsel
+cpl
+cryptol
+crystal
+csound
+cuneiform
+curl
+curry
+cybil
+cyclone
+cypher query language
+cython
+ceemac
+d
+dart
+darwin
+dataflex
+datalog
+datatrieve
+dbase
+dc
+dcl (digital command language)
+delphi
+dinkc
+dibol
+dog
+draco
+drakon
+dylan
+dynamo
+dax (data analysis expressions)
+e
+ease
+easy pl/i
+easytrieve plus
+ec
+ecmascript
+edinburgh imp
+egl
+eiffel
+elan
+elixir
+elm
+emacs lisp
+emerald
+epigram
+epl (easy programming language)
+epl (eltron programming language)
+erlang
+es
+escher
+espol
+esterel
+etoys
+euclid
+euler
+euphoria
+euslisp robot programming language
+cms exec (exec)
+exec 2
+executable uml
+ezhil
+f
+f# (f sharp)
+f*
+factor
+fantom
+faust
+ffp
+fish
+fjlnir
+fl
+flavors
+flex
+flix
+floop
+flow-matic (b0)
+focal (formulating on-line calculations in algebraic language/formula calculator)
+focus
+foil
+formac (formula manipulation compiler)
+@formula
+forth
+fortran  iso/iec 1539
+fortress
+fp
+foxbase/foxpro
+franz lisp
+futhark
+f-script
+game maker language (scripting language)
+gamemonkey script
+gams (general algebraic modeling system)
+gap
+g-code
+gdscript (godot)
+genie
+gdl (geometric description language)
+george
+glsl (opengl shading language)
+gnu e
+gnu guile (gnu ubiquitous intelligent language for extensions)
+go
+go!
+goal (game oriented assembly lisp)
+gdel
+golo
+gom (good old mad)
+google apps script
+gosu
+gotran (ibm 1620)
+gpss (general purpose simulation system)
+graphtalk (computer sciences corporation)
+grass
+grasshopper
+groovy (apache groovy)
+hack
+haggis
+hal/s
+halide (programming language)
+hamilton c shell
+harbour
+hartmann pipelines
+haskell
+haxe
+hermes
+high level assembly (hla)
+hlsl
+hollywood
+holyc (templeos)
+hop
+hopscotch
+hope
+hume
+hypertalk
+io
+icon
+ibm basic assembly language
+ibm hascript
+ibm informix-4gl
+ibm rpg
+idl
+idris
+inform
+islisp
+j
+j# (j sharp)
+j++ (j plus plus)
+jade
+jai
+jal
+janus (concurrent constraint programming language)
+janus (time-reversible computing programming language)
+jass
+java
+javafx script
+javascript
+jess (programming language)
+jcl
+jean
+join java
+joss
+joule
+jovial
+joy
+jscript
+jscript .net
+julia
+jython
+k
+kaleidoscope
+karel
+kee
+kixtart
+klerer-may system
+kif (knowledge interchange format)
+kojo
+kotlin
+krc
+krl
+krl (kuka robot language)
+krypton
+kornshell (ksh)
+kodu
+kv (kivy)
+labview
+ladder
+lansa
+lasso
+lava
+lc-3
+lean
+legoscript
+lexico
+lil
+lilypond
+limbo
+limnor
+linc
+lingo
+linq
+lis
+lisa
+language h
+lisp  iso/iec 13816
+lite-c
+lithe
+little b
+lll
+logo
+logtalk
+lotusscript
+lpc
+lse
+lsl
+livecode
+livescript
+lua
+lucid
+lustre
+lyapas
+lynx
+m2001
+m4
+m#
+machine code
+mad (michigan algorithm decoder)
+mad/i
+magik
+magma
+mni
+maple
+mapper (now part of bis)
+mark-iv (now vision:builder)
+mary
+matlab
+masm microsoft assembly x86
+math-matic
+maude system
+maxima (see also macsyma)
+max (max msp  graphical programming environment)
+maxscript internal language 3d studio max
+maya (mel)
+mdl
+mercury
+mesa
+mheg-5 (interactive tv programming language)
+microcode
+microscript
+microsoft power fx
+miis
+milk (programming language)
+mimic
+mirah
+miranda
+miva script
+ml
+model 204
+modelica
+modula
+modula-2
+modula-3
+mohol
+moo
+moonscipt
+mortran
+mouse
+mpd
+msl
+mumps
+mupad
+mutan
+mystic programming language (mpl)
+nasm
+napier88
+neko
+nemerle
+nesl
+net.data
+netlogo
+netrexx
+newlisp
+newp
+newspeak
+newtonscript
+nial
+nickle (nitin)
+nim
+nix (systems configuration language)
+npl
+not exactly c (nxc)
+not quite c (nqc)
+nsis
+nu
+nwscript
+nxt-g
+o:xml
+oak
+oberon
+obj2
+object lisp
+objectlogo
+object rexx
+object pascal
+objective-c
+objective-j
+obliq
+ocaml
+occam
+occam-
+octave
+omnimark
+opa
+opal
+opencl
+openedge abl
+opl
+openvera
+ops5
+optimj
+orc
+orca/modula-2
+oriel
+orwell
+oxygene
+oz
+p
+p4
+parasail (programming language)
+pari/gp
+pascal  iso 7185
+pascal script
+pcastl
+pcf
+pearl
+peoplecode
+perl
+pdl
+pharo
+php
+pico
+picolisp
+pict
+pike
+pilot
+pipelines
+pizza
+pl-11
+pl/0
+pl/b
+pl/c
+pl/i  iso 6160
+pl/m
+pl/p
+pl/s
+pl/sql
+pl360
+planc
+plankalkl
+planner
+plex
+plexil
+plus
+pop-11
+pop-2
+postscript
+portable
+pov-ray sdl
+powerhouse
+powerbuilder  4gl gui application generator from sybase
+powershell
+ppl
+processing
+processing.js
+prograph
+project verona
+prolog
+promal
+promela
+prose modeling language
+protel
+providex
+pro*c
+pure
+pure data
+purescript
+python
+q (programming language from kx systems)
+q# (microsoft programming language)
+qalb
+quantum computation language
+qtscript
+quakec
+qpl
+.ql
+r
+r++
+racket
+raku
+rapid
+rapira
+ratfiv
+ratfor
+rc
+reason
+rebol
+red
+redcode
+refal
+rexx
+roop
+rpg
+rpl
+rsl
+rtl/2
+ruby
+rust
+s
+s2
+s3
+s-lang
+s-plus
+sa-c
+sabretalk
+sail
+sako
+sas
+sasl
+sather
+sawzall
+scala
+scheme
+scilab
+scratch
+script.net
+sed
+seed7
+self
+sensetalk
+sequencel
+serpent
+setl
+short code
+simpol
+signal
+simple
+simscript
+simula
+simulink
+sisal
+slip
+small
+smalltalk
+sml
+strongtalk
+snap!
+snobol (spitbol)
+snowball
+sol
+solidity
+sophaeros
+source
+spark
+speakeasy
+speedcode
+spin
+sp/k
+sps
+sql
+sqr
+squeak
+squirrel
+sr
+s/sl
+starlogo
+strand
+stata
+stateflow
+subtext
+sbl
+supercollider
+superplan
+supertalk
+swift (apple programming language)
+swift (parallel scripting language)
+sympl
+systemverilog
+t
+tacl
+tacpol
+tads (text adventure development system)
+tal
+tcl
+tea
+teco (text editor and corrector)
+telcomp
+tex
+tex (text executive programming language)
+tie
+tmg (transmo griffer), compiler-compiler
+tom
+toi
+topspeed (clarion)
+tpu (text processing utility)
+trac
+ttm
+t-sql (transact-sql)
+transcript (livecode)
+ttcn (tree and tabular combined notation)
+turing
+tutor (plato author language)
+txl
+typescript
+tynker
+ubercode
+ucsd pascal
+umple
+unicon
+uniface
+unity
+unrealscript
+vala
+verilog
+vhdl
+vim script
+viper (ethereum/ether (eth))
+visual dataflex
+visual dialogscript
+visual foxpro
+visual j++ (visual j plus plus)
+visual lisp
+visual objects
+visual prolog
+watfiv, watfor (waterloo fortran iv)
+webassembly
+webdna
+whiley
+winbatch
+wolfram language
+wyvern
+x++ (x plus plus/microsoft dynamics ax)
+x10
+xbase++ (xbase plus plus)
+xbl
+xc (targets xmos architecture)
+xharbour
+xl
+xojo
+xotcl
+xod
+xpl
+xpl0
+xquery
+xsb
+xsharp (x#)
+xslt
+xtend
+yorick
+yql
+yoix
+z notation
+z shell
+zebra, zpl, zpl2
+zeno
+zetalisp
+zig
+zopl
+zpl
+z++

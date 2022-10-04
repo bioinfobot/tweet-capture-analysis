@@ -1,0 +1,67 @@
+06/18/2022 03:54:18 PM - INFO: Started Tweet-analysis
+06/18/2022 03:54:18 PM - DEBUG: Loading latest tweet data
+06/18/2022 03:54:18 PM - DEBUG: obtaining latest tweet data directory
+06/18/2022 03:54:18 PM - DEBUG: Obtaining all tweet data directories
+06/18/2022 03:54:18 PM - INFO: loaded: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022
+06/18/2022 03:54:18 PM - INFO: Found latest tweet data: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022/2.tsv
+06/18/2022 03:54:18 PM - DEBUG: Cleaning Extracted tweets
+06/18/2022 03:54:18 PM - DEBUG: Tokenizing extracted tweets
+06/18/2022 03:54:18 PM - INFO: Tokenization successful
+06/18/2022 03:54:18 PM - DEBUG: Filtering Tokens
+06/18/2022 03:54:19 PM - INFO: Token filtration successful
+06/18/2022 03:54:19 PM - DEBUG: Flattening all tokens into a 1d array
+06/18/2022 03:54:19 PM - INFO: Flattening successful
+06/18/2022 03:54:19 PM - DEBUG: Calculating users, tweet tokens, hashtags, and, programing languages, user 
+06/18/2022 03:54:19 PM - INFO: Frequency calculation sucessfull
+06/18/2022 03:54:19 PM - DEBUG: Creating word cloud
+06/18/2022 03:54:19 PM - DEBUG: CACHEDIR=/home/axiomcura/.cache/matplotlib
+06/18/2022 03:54:19 PM - DEBUG: Using fontManager instance from /home/axiomcura/.cache/matplotlib/fontlist-v330.json
+06/18/2022 03:54:19 PM - DEBUG: Loaded backend qtagg version unknown.
+06/18/2022 03:54:19 PM - DEBUG: Loaded backend QtAgg version unknown.
+06/18/2022 03:54:21 PM - DEBUG: Saving analyized tweets into json file
+06/18/2022 03:54:21 PM - DEBUG: JSON file create at: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/2022-02.json
+06/18/2022 03:54:21 PM - INFO: Twwet-analysis execute sucessful. Exiting...
+06/18/2022 03:56:50 PM - INFO: Started Tweet-analysis
+06/18/2022 03:56:50 PM - DEBUG: Loading latest tweet data
+06/18/2022 03:56:50 PM - DEBUG: obtaining latest tweet data directory
+06/18/2022 03:56:50 PM - DEBUG: Obtaining all tweet data directories
+06/18/2022 03:56:50 PM - INFO: loaded: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022
+06/18/2022 03:56:50 PM - INFO: Found latest tweet data: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022/2.tsv
+06/18/2022 03:56:50 PM - DEBUG: Cleaning Extracted tweets
+06/18/2022 03:56:50 PM - DEBUG: Tokenizing extracted tweets
+06/18/2022 03:56:50 PM - INFO: Tokenization successful
+06/18/2022 03:56:50 PM - DEBUG: Filtering Tokens
+06/18/2022 03:56:51 PM - INFO: Token filtration successful
+06/18/2022 03:56:51 PM - DEBUG: Flattening all tokens into a 1d array
+06/18/2022 03:56:51 PM - INFO: Flattening successful
+06/18/2022 03:56:51 PM - DEBUG: Calculating users, tweet tokens, hashtags, and, programing languages, user 
+06/18/2022 03:56:51 PM - INFO: Frequency calculation sucessfull
+06/18/2022 03:56:51 PM - DEBUG: Creating word cloud
+06/18/2022 03:56:51 PM - DEBUG: CACHEDIR=/home/axiomcura/.cache/matplotlib
+06/18/2022 03:56:51 PM - DEBUG: Loaded backend qtagg version unknown.
+06/18/2022 03:56:51 PM - DEBUG: Loaded backend QtAgg version unknown.
+06/18/2022 03:56:53 PM - DEBUG: Saving analyized tweets into json file
+06/18/2022 03:56:53 PM - DEBUG: JSON file create at: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/2022-02.json
+06/18/2022 03:56:53 PM - INFO: Twwet-analysis execute sucessful. Exiting...
+06/18/2022 03:58:35 PM - INFO: Started Tweet-analysis
+06/18/2022 03:58:35 PM - DEBUG: Loading latest tweet data
+06/18/2022 03:58:35 PM - DEBUG: obtaining latest tweet data directory
+06/18/2022 03:58:35 PM - DEBUG: Obtaining all tweet data directories
+06/18/2022 03:58:35 PM - INFO: loaded: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022
+06/18/2022 03:58:35 PM - INFO: Found latest tweet data: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/tweet_data/2022/2.tsv
+06/18/2022 03:58:35 PM - DEBUG: Cleaning Extracted tweets
+06/18/2022 03:58:35 PM - DEBUG: Tokenizing extracted tweets
+06/18/2022 03:58:35 PM - INFO: Tokenization successful
+06/18/2022 03:58:35 PM - DEBUG: Filtering Tokens
+06/18/2022 03:58:36 PM - INFO: Token filtration successful
+06/18/2022 03:58:36 PM - DEBUG: Flattening all tokens into a 1d array
+06/18/2022 03:58:36 PM - INFO: Flattening successful
+06/18/2022 03:58:36 PM - DEBUG: Calculating users, tweet tokens, hashtags, and, programing languages, user 
+06/18/2022 03:58:36 PM - INFO: Frequency calculation sucessfull
+06/18/2022 03:58:36 PM - DEBUG: Creating word cloud
+06/18/2022 03:58:36 PM - DEBUG: CACHEDIR=/home/axiomcura/.cache/matplotlib
+06/18/2022 03:58:36 PM - DEBUG: Loaded backend qtagg version unknown.
+06/18/2022 03:58:36 PM - DEBUG: Loaded backend QtAgg version unknown.
+06/18/2022 03:58:38 PM - DEBUG: Saving analyized tweets into json file
+06/18/2022 03:58:38 PM - DEBUG: JSON file create at: /home/axiomcura/Development/Projects/bioinfobot/tweet-capture-analysis/data/2022-02.json
+06/18/2022 03:58:38 PM - INFO: Twwet-analysis execute sucessful. Exiting...
